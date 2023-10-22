@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .bannerButton{
+    @apply px-6 py-2 border border-[#101010] uppercase rounded-full text-xs tracking-widest text-gray-500 transition-all hover:border-purple-600/80 hover:text-purple-600
+  }
+  .contactInput{
+    @apply outline-none bg-[#151515] rounded-sm border-b px-6 py-4 border-[#101010] text-gray-500 placeholder-gray-500 transition-all focus:border-purple-800 focus:text-purple-800 hover:border-purple-800
+  }
+}
+
+
+ 
