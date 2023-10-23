@@ -22,36 +22,36 @@ function Projects({projects}: Props) {
   return (
     <div 
     className='h-screen relative flex overflow-hidden flex-fol text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-        <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500'>Projects</h3>
+        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500'>Projects</h3>
 
-        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandtory z-20 scrollbar scrollbar-track-gray-600/20 scrollbar-thumb-purple-800/30'>
+        <div className='relative w-full mt-10 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandtory z-20 scrollbar scrollbar-track-gray-600/20 scrollbar-thumb-purple-800/30'>
             {projects?.map((project,i)=>(
-                <div key={project?._id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20  md:p-44 h-screen'>
+                <div key={project?._id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 md:p-22 h-screen'>
                     
                     <Link href={project?.linkToBuild}>
                     <motion.img 
                         initial={{
-                            y:-300, opacity:0
+                            y:-100, opacity:0
                                 }}
                     transition={{duration:1.2}}
                     whileInView={{opacity:1,y:0}}
                     viewport={{once:true}}
                     
-                    className='h-[w-screen-350px] xl:h-[400px] md:h-[400px] ' src={urlFor(project?.image).url()} alt="" />
+                    className='h-[w-screen-400px] xl:h-[350px] md:h-[350px] ' src={urlFor(project?.image).url()} alt="" />
                       </Link>
                     
-                    <div className='flex flex-row'>
+                    <div className='flex flex-row flex-wrap px-3'>
                         {project?.technologies?.map((tech)=>(
                               <img key={tech?._id} className='h-8 w-8 p-0.5 rounded-full'
                               src={urlFor(tech?.image).url()} alt=''/>
                         ))}
                     </div>
                   
-                    <div >
+                    <div className='max-w-[800px]' >
                         <h4 className='text-3xl font-semibold pb-2 text-center'>
                             <span className='underline decoration-purple-800/60'>Project {i+1} of {projects.length}</span>: {project?.title}</h4>
                     
-                    <p className='text-xs text-gray-300 text-center md:text-left mt-1'>
+                    <p className='text-xs text-gray-300 text-center  mt-1'>
                         {project?.summary}                    </p>
                     </div>
                 </div>

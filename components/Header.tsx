@@ -44,9 +44,9 @@ function Header({socials}: Props) {
         </motion.div>
 
                 <div>
-                <Link href={"#banner"} >
-                 <img className='cursor-pointer w-10 p-1 flex flex-row items-center hover:gray' src='https://previews.dropbox.com/p/thumb/ACF53mN6JOoKUvT_0knBSEptVTMaWexLSKulQ_KmMNMgNhLT1rVF5rp10BW1rZQAFdf0pZBJ6A7cEL7fCq0aq6mpKxDCAM4tDpHHqP8tY3XPfS2junQgYHgmC7a8V8i6Y72RoSBM0HJ3tS6-sdWpsfBYalAfiaXRcGNozPyXcdniZolt6vN7DX-3Izcyrg36BZqE6QqAvyt4amqx0duZ4IFBe6Lk4My0bnSpCR8gSSGW7KrQHK1qOwD_pir9_x6ojMheqfqjP5FHXNZIneygAd4p6XS77TVJv6bnTj1EIDAR3HvlDKAkuCVit0lIGi01gmM_umqMKWJZPV7Ss7Q6keLx/p.png' />
-            </Link>
+                <   Link href={"#banner"} >
+                    <img className='hidden cursor-pointer w-10 p-1 hover:gray' src='https://previews.dropbox.com/p/thumb/ACF53mN6JOoKUvT_0knBSEptVTMaWexLSKulQ_KmMNMgNhLT1rVF5rp10BW1rZQAFdf0pZBJ6A7cEL7fCq0aq6mpKxDCAM4tDpHHqP8tY3XPfS2junQgYHgmC7a8V8i6Y72RoSBM0HJ3tS6-sdWpsfBYalAfiaXRcGNozPyXcdniZolt6vN7DX-3Izcyrg36BZqE6QqAvyt4amqx0duZ4IFBe6Lk4My0bnSpCR8gSSGW7KrQHK1qOwD_pir9_x6ojMheqfqjP5FHXNZIneygAd4p6XS77TVJv6bnTj1EIDAR3HvlDKAkuCVit0lIGi01gmM_umqMKWJZPV7Ss7Q6keLx/p.png' />
+                    </Link>
                 </div>
 
         <Link href={'#contact'} >
