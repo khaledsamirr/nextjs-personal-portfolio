@@ -14,8 +14,7 @@
 
 # production
 /build
-/portoflio/node_modules
-/portoflio/.sanity
+
 
 # misc
 .DS_Store
