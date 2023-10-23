@@ -23,9 +23,9 @@ function PersonalSkill({directionLeft,skill}: Props) {
           className='rounded-full border border-gray-500 object-cover  w-16 h-16 xl:w-16 xl:h-16 filter  group-hover:grayscale transition duration-300 ease-in-out'
         
         />
-        <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-16 h-16 xl:w-16 xl:h-16 rounded-full '>
+        <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-purple-900 w-16 h-16 xl:w-16 xl:h-16 rounded-full '>
           <div className='h-full flex items-center justify-center '>
-            <p className='text-2xl font-bold text-black opacity-100 '>{skill?.progress}%</p>
+            <p className='text-lg font-semibold text-white  opacity-100 '>{skill?.progress}%</p>
           </div>
         </div>
         

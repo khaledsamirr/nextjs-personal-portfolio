@@ -7,14 +7,9 @@ import { groq } from "next-sanity";
 const query = groq`
     *[_type=="pageInfo"]`;
 
-type Data={
-    pageInfo:PageInfo[]
-}
-export default async function handler ( req: NextApiRequest, res: NextApiResponse<Data>){
+export default async function getPageInfo ( ){
     try{
-        const pageInfo= await sanityClient.fetch(query);
-        return res.status(200).json({pageInfo});
-    
-    
+        const data = await sanityClient.fetch(query,{cache:"no-cache"});
+        return data;
        } catch(err) { console.log(err)};
 }

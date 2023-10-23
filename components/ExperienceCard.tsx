@@ -32,7 +32,7 @@ function ExperienceCard({experience}: Props) {
 
         <ul className='list-disc spac-y-4 ml-5 text-xs text-gray-400'>
         {experience?.points.map((point)=>((
-          <div className='flex flex-wrap flex-col'><li key={point}>{point}</li></div>
+          <div key={point} className='flex flex-wrap flex-col'><li key={point}>{point}</li></div>
                 
           )))}
         </ul>
